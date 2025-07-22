@@ -5,7 +5,7 @@ import { NuxtLink } from "#components";
 <template>
 	<nav class="container">
 		<ul>
-			<li><strong>Tasks App</strong></li>
+			<li><NuxtLink to="/"><strong>Tasks App</strong></NuxtLink></li>
 		</ul>
 		<ul>
 			<NuxtLink :to="{ name: 'create' }">Create a Task</NuxtLink>
