@@ -1,12 +1,14 @@
+<script setup lang="ts">
+import { NuxtLink } from "#components";
+</script>
+
 <template>
 	<nav class="container">
 		<ul>
-			<li><strong>Acme Corp</strong></li>
+			<li><strong>Tasks App</strong></li>
 		</ul>
 		<ul>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Products</a></li>
+			<NuxtLink :to="{ name: 'create' }">Create a Task</NuxtLink>
 		</ul>
 	</nav>
 </template>
